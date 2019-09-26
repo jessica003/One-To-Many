@@ -48,6 +48,6 @@ Route::get('/delete',function(){
 
 	$user = User::findOrFail(1);
 	// $user->posts()->delete();//to delete all rows in post table
-	$user->posts()->whereId(1)->delete();
+	$user->posts()->whereId(2)->delete();
 
 });
